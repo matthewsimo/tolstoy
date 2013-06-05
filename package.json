@@ -1,0 +1,21 @@
+{
+  "name": "tolstoy",
+  "version": "0.0.0",
+  "description": "turn dropbox into a json feed",
+  "main": "app.js",
+  "dependencies": {
+    "dropbox": "~0.9.2",
+    "express": "~3.2.6",
+    "mongodb": "~1.3.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:matthewsimo/tolstoy.git"
+  },
+  "author": "matthewsimo",
+  "license": "MIT"
+}
