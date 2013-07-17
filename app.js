@@ -1,19 +1,19 @@
 
-
-var appkey = '9fij6hc7lspy8yl';
-var appsecret = 'iw6ghnu3k4bbky7';
-
-var requestToken = 'g31xkn4lky13sfx';
-var requestTokenSecret = 'vsygntawfqiza5s';
-
-var accessToken = 'lpvqwbncj1allu6';
-var accessTokenSecret = 'ibc7fxln5qwwwlx';
-
+var creds = require('./creds');
+/* Reveals creds at:
+creds.appkey
+creds.appsecret
+creds.requestToken
+creds.requestTokenSecret
+creds.accessToken
+creds.accessTokenSecret
+*/
 
 var express = require('express');
 var http = require('http');
 var tolstoy = require('./tolstoy');
 var app = express();
+
 
 /*
  * Set up the server */
