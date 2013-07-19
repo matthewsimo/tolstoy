@@ -1,14 +1,4 @@
 
-var creds = require('./creds');
-/* Reveals creds at:
-creds.appkey
-creds.appsecret
-creds.requestToken
-creds.requestTokenSecret
-creds.accessToken
-creds.accessTokenSecret
-*/
-
 var express = require('express');
 var http = require('http');
 var tolstoy = require('./tolstoy');
@@ -31,11 +21,11 @@ app.listen(3000);
 
 /*
  * Poll the Dropbox API every 3 seconds */
-setInterval( function(){
-
-  console.log("interval fire");
-  tolstoy.checkForUpdates();
-
-}, 3000 );
+//setInterval( function(){
+//
+//  console.log("interval fire");
+  tolstoy.metadata();
+//
+//}, 3000 );
 
 
